@@ -82,10 +82,14 @@ body {
 /*===== FIXED BACKGROUND IMG =====*/
 
 .fixed-background {
-  overflow: hidden; /*-- Correction for iOS --*/
+	overflow: hidden;
+	padding: 10rem 0;
 }
 
-
+.fixed {
+	background-image: url('../img/Background.png');
+	position: fixed;
+}
 
 /*-- Emoji Navbar --*/
 
