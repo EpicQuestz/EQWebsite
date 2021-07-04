@@ -87,7 +87,7 @@ body {
 }
 
 .fixed {
-	background-image: url('../img/Background.png');
+	background-image: url('../img/background.png');
 	position: fixed;
 }
 
