@@ -4,18 +4,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>EpicQuestz | Rohan Project</title>
+	<title>EpicQuestz | Map Archive</title>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<!-- Bootstrap 4.5 CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Datatables CSS -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap4.min.css">
+	<!-- Datatables Javascript -->
+	<script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script defer src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+	<script defer src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap4.min.js"></script>
+	<script defer src="js/script.js"></script>
+	<!-- Moment Javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
 
 	<!-- Navigation -->
 	<nav class="navbar bg-dark navbar-dark navbar-expand-lg">
@@ -25,7 +32,6 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResonsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			
 			
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
@@ -37,72 +43,151 @@
 					<li class="nav-item"><a href="" class="nav-link">Map</a></li>
 					<li class="nav-item"><a href="" class="nav-link">Donate</a></li>
 				</ul>
-				
-				
 			</div>
-		
 		</div>
 	</nav>
 
-
-	<!-- Fixed Background IMG -->
-	
-	<div class="fixed-background">
-		<div class="row text-light py-5">
-			<div class="col-12 text-center">
-				<h1>A Mighty Kingdom</h1>
-				<h1>Recreated in Minecraft</h1>
-			</div>
-		
-		</div>
-
-		
-		<div class="fixed-wrap">
-			<div class="fixed">
-			</div>
-		</div>
-	</div>
 
 	
 	<!-- Main Page Heading -->
 	<div>
 		<div class="col-12 text-center mt-5">
-			<h1 class="text-dark pt-4">The Rohan Project</h1>
+			<h1 class="text-dark pt-4">Map Archive</h1>
 			<div class="border-top border-primary w-25 mx-auto my-3">
 			</div>
-		</div>
-		
-
-		
-	<!-- Three Column Section -->	
-
-		<div class="container">
-			<div class="row my-5">
-				<div class="col-md-4 my-4">
-					<img src="img/1.jpg" class="w-100">
-					<h4 class="my-4">Helm's Deep</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="#" class="btn btn-outline-dark btn-md">Download</a>
-				</div>
-				<div class="col-md-4 my-4">
-					<img src="img/1.jpg" class="w-100">
-					<h4 class="my-4">Aldburg</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="#" class="btn btn-outline-dark btn-md">Download</a>
-				</div>
-				<div class="col-md-4 my-4">
-					<img src="img/1.jpg" class="w-100">
-					<h4 class="my-4">Grimslade</h4>
-					<p>Although anyone can join and look around, only Builders can help out in the creation of maps and locations from Middle-Earth.</p>
-					<a href="#" class="btn btn-outline-dark btn-md">Download</a
-				</div>
-
-			</div>
-
+			<br>
 		</div>
 	</div>
-
-
+		
+	<!-- Archive -->	
+	<div class="container">
+		<table id="archive" class="table table-striped table-bordered" style="width:100%">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Trailer</th>
+					<th>PMC Link</th>
+					<th>Download</th>
+					<th>Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+				<tr>
+					<td>MAP</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>LINK</td>
+					<td>DATE</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
 
 	<!-- "Jumbotron" -->
 
