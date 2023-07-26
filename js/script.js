@@ -5,14 +5,14 @@ $(document).ready( function () {
 			dataType: "json"
 
 		},
-		columns: [		
+		columns: [
 			{
 				data: 'name'
 			},
 			{
 				data: 'trailerLink',
 				render: function (data, type, row, meta) {
-					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">YouTube</a>`;}
+					{return (data == "") ? "Unavailable" : `<a href="` + data + `'"><img src="img/yt_logo.png" alt="YouTube" style="width: 100%"</a>`;}
 				}
 			},
 			{
@@ -48,3 +48,4 @@ $(document).ready( function () {
 		]
 	});
 } )
+
