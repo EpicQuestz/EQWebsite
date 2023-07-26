@@ -1,32 +1,51 @@
 $(document).ready( function () {
 	$('#archive').DataTable({
 		ajax: {
-			url: "https://api.npoint.io/1cfe644e05ccb363a03e",
+			url: "https://api.npoint.io/3b1d77ebbac931da3567",
 			dataType: "json"
+
 		},
-		columns: [
+		columns: [		
 			{
 				data: 'name'
 			},
 			{
 				data: 'trailerLink',
 				render: function (data, type, row, meta) {
-					return `<a href="'+data+'">Trailer</a>`;
+					return `<a href="` + data + `'">YouTube</a>`;
 				}
 			},
 			{
-				data: 'pmcLink'
+				data: 'pmcLink',
+				render: function (data, type, row, meta) {
+					return `<a href="` + data + `'">Link</a>`;
+				}
 			},
 			{
-				data: 'downloadJava'
+				data: 'downloadJava',
+				render: function (data, type, row, meta) {
+					return `<a href="` + data + `'">Download</a>`;
+				}
 			},
 			{
-			data: 'downloadBedrock'
+				data: 'downloadBedrock',
+				defaultContent: "<i>Unavailable</i>",
+				render: function (data, type, row, meta) {
+					return `<a href="` + data + `'">Download</a>`;
+				}
 			},
 			{
-			data: 'releaseDate'
+				data: 'releaseDate'
+				render: function (data, type, row, meta) {
+					{return (data == "") ? "Unknown" : data;}
+				}
 			},
-			{data: 'updateDate'}
+			{
+				data: 'updateDate',
+				render: function (data, type, row, meta) {
+					{return (data == "") ? "Not Updated" : data;}
+				}
+			}
 		]
 	});
-} );
+} )
