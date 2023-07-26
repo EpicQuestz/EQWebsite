@@ -1,7 +1,7 @@
 $(document).ready( function () {
 	$('#archive').DataTable({
 		ajax: {
-			url: "https://api.npoint.io/3b1d77ebbac931da3567",
+			url: "https://downloads.epicquestz.com/files/maps.json",
 			dataType: "json"
 
 		},
