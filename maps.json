@@ -4,49 +4,49 @@
 			"id": 1,
 			"name": "Minas Tirith",
 			"releaseDate": "2012-01-10",
-			"updateDate": "",
-			"javaVersion": "",
-			"bedrockVersion": "",
+			"updateDate": "x",
+			"javaVersion": "x",
+			"bedrockVersion": "x",
 			"trailerLink": "https://www.youtube.com/watch?v=_tDpK77hygs",
 			"pmcLink": "https://www.planetminecraft.com/project/the-largest-minas-tirith/",
 			"downloadJava": "https://downloads.epicquestz.com/files/Java/EQ_MinasTirith_13.zip",
-			"downloadBedrock": ""	
+			"downloadBedrock": "x"	
 		},
 		{
 			"id": 2,
 			"name": "Osgiliath Unruined",
 			"releaseDate": "2014-09-22",
-			"updateDate": "",
-			"javaVersion": "",
-			"bedrockVersion": "",
+			"updateDate": "x",
+			"javaVersion": "x",
+			"bedrockVersion": "x",
 			"trailerLink": "https://www.youtube.com/watch?v=sUMTig1cX98",
 			"pmcLink": "https://www.planetminecraft.com/project/osgiliath---ancient-capital-of-gondor/",
 			"downloadJava": "https://downloads.epicquestz.com/files/Java/EQ_Osgiliath_14.zip",
-			"downloadBedrock": ""
+			"downloadBedrock": "x"
 		},
 		{
 			"id": 3,
 			"name": "Bree",
 			"releaseDate": "2015-04-10",
-			"updateDate": "",
-			"javaVersion": "",
-			"bedrockVersion": "",
+			"updateDate": "x",
+			"javaVersion": "x",
+			"bedrockVersion": "x",
 			"trailerLink": "https://www.youtube.com/watch?v=4wNEEsjWmCs",
 			"pmcLink": "https://www.planetminecraft.com/project/bree-land-3288607/",
 			"downloadJava": "https://downloads.epicquestz.com/files/Java/EQ_Bree_15.zip",
-			"downloadBedrock": ""
+			"downloadBedrock": "x"
 		},
 		{
 			"id": 4,
 			"name": "The Black Gate",
 			"releaseDate": "2014-08-13",
-			"updateDate": "",
-			"javaVersion": "",
-			"bedrockVersion": "",
+			"updateDate": "x",
+			"javaVersion": "x",
+			"bedrockVersion": "x",
 			"trailerLink": "https://www.youtube.com/watch?v=4ecJJHqZ9JA",
 			"pmcLink": "https://www.planetminecraft.com/project/the-black-gate-of-mordor/",
 			"downloadJava": "https://downloads.epicquestz.com/files/Java/OldVersions/BlackGate_14.zip",
-			"downloadBedrock": ""
+			"downloadBedrock": "x"
 		},
 		{
 			"id": 5,
@@ -57,7 +57,7 @@
 			"trailerLink": "LINK",
 			"pmcLink": "LINK",
 			"downloadJava": "LINK",
-			"downloadBedrock": ""
+			"downloadBedrock": "x"
 		}
 	]
-}
+};
