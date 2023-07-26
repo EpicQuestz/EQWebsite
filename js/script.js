@@ -12,30 +12,29 @@ $(document).ready( function () {
 			{
 				data: 'trailerLink',
 				render: function (data, type, row, meta) {
-					return `<a href="` + data + `'">YouTube</a>`;
+					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">YouTube</a>`;}
 				}
 			},
 			{
 				data: 'pmcLink',
 				render: function (data, type, row, meta) {
-					return `<a href="` + data + `'">Link</a>`;
+					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">Link</a>`;}
 				}
 			},
 			{
 				data: 'downloadJava',
 				render: function (data, type, row, meta) {
-					return `<a href="` + data + `'">Download</a>`;
+					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">Download</a>`;}
 				}
 			},
 			{
 				data: 'downloadBedrock',
-				defaultContent: "<i>Unavailable</i>",
 				render: function (data, type, row, meta) {
-					return `<a href="` + data + `'">Download</a>`;
+					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">Download</a>`;}
 				}
 			},
 			{
-				data: 'releaseDate'
+				data: 'releaseDate',
 				render: function (data, type, row, meta) {
 					{return (data == "") ? "Unknown" : data;}
 				}
