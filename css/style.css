@@ -68,6 +68,10 @@ body {
 	border-top: .2rem solid #FF0000!important;
 }
 
+.border-green{
+	border-top: .2rem solid #006400!important;
+}
+
 .btn-lg {
 	border-radius: 1;
 	font-size: 1rem;
