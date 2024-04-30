@@ -7,42 +7,39 @@ $(document).ready( function () {
 		},
 		columns: [
 			{
-				data: 'name'
+				data: 'pmcLink',
+				render: function (data, type, row, meta) {
+					{return (data == "") ? row.name : `<a href="` + data + `'">` + row.name + `</a>`;}
+				}
 			},
 			{
 				data: 'releaseDate',
 				render: function (data, type, row, meta) {
-					{return (data == "") ? "Unknown" : data;}
+					{return (data == "") ? "(Unknown)" : data;}
 				}
 			},
 			{
 				data: 'updateDate',
 				render: function (data, type, row, meta) {
-					{return (data == "") ? "Not Updated" : data;}
+					{return (data == "") ? "" : data;}
 				}
 			},
 			{
 				data: 'trailerLink',
 				render: function (data, type, row, meta) {
-					{return (data == "") ? "Unavailable" : `<a href="` + data + `'"><img src="img/yt_logo.png" alt="YouTube" style="width: 100%"</a>`;}
-				}
-			},
-			{
-				data: 'pmcLink',
-				render: function (data, type, row, meta) {
-					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">Link</a>`;}
+					{return (data == "") ? "(Unavailable)" : `<a href="` + data + `'">YouTube</a>`;}
 				}
 			},
 			{
 				data: 'downloadJava',
 				render: function (data, type, row, meta) {
-					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">Download</a>`;}
+					{return (data == "") ? "" : (row.javaVersion == "") ? `<a href="` + data + `'">Download</a>` : `<a href="` + data + `'">Download (` + row.javaVersion + `)</a>`;}
 				}
 			},
 			{
 				data: 'downloadBedrock',
 				render: function (data, type, row, meta) {
-					{return (data == "") ? "Unavailable" : `<a href="` + data + `'">Download</a>`;}
+					{return (data == "") ? "" : (row.bedrockVersion == "") ? `<a href="` + data + `'">Download</a>` : `<a href="` + data + `'">Download (` + row.bedrockVersion + `)</a>`;}
 				}
 			}
 		]
