@@ -5,6 +5,7 @@ $(document).ready( function () {
 			dataType: "json"
 
 		},
+		order: [[4, 'desc']],
 		columns: [
 			{
 				data: 'pmcLink',
